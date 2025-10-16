@@ -62,6 +62,7 @@ img {
     margin-right: 76px;
 }
 .nav-link {
+    position: relative;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -71,10 +72,8 @@ img {
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link.current {
-    position: relative;
-}
-.nav-link.current::after {
+
+.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -83,7 +82,16 @@ img {
     height: 4px;
 background-color: #404bbf;
 border-radius: 2px;
+opacity: 0;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-link:hover::after,
+.nav-link:focus:after,
+.nav-link.current::after {
+    opacity: 1;
+}
+
 .nav-list {
     display: flex;
         align-items: center;
@@ -109,6 +117,7 @@ border-radius: 2px;
         padding: 24px 0;
             display: block;
             gap: 40px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus,
@@ -122,6 +131,17 @@ border-radius: 2px;
     background-color: #2e2f42;
     padding: 188px 0;
     text-align: center;
+    /* background-color: rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7);; */
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
+    ), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-title {
@@ -151,9 +171,9 @@ border-radius: 2px;
     border: none;
     min-width: 169px;
     height: 56px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .hero-button:hover,
