@@ -422,6 +422,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
+        margin-bottom: 16px;
       
 
  }
@@ -444,14 +445,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: flex-start;
-    gap: 120px;
-
 }
 
-.footer-social {
-
-}
 .footer-ul {
     display: flex;
     gap: 16px;
@@ -478,5 +473,5 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     fill: #f4f4fd;
 }
 .footer-left {
-    
+    margin-right: 120px;
 }
