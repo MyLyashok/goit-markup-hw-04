@@ -505,7 +505,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 
-.ftr-email:focus {
+.ftr-email:focus, 
+.ftr-email:hover {
     outline: none;
     border-color: #31d0aa;
 }
@@ -537,6 +538,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         align-items: center;
         justify-content: center;
         gap: 16px;
+        outline: none;
+        border: none;
 
 }
 
